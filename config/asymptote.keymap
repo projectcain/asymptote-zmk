@@ -44,6 +44,11 @@
             bindings = <&kp QUESTION>;
             key-positions = <20 21>;
         };
+
+        Semi {
+            bindings = <&kp SEMICOLON>;
+            key-positions = <21 22>;
+        };
     };
 
     keymap {
