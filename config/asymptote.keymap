@@ -49,6 +49,16 @@
             bindings = <&kp SEMICOLON>;
             key-positions = <21 22>;
         };
+
+        copy {
+            bindings = <&kp LC(C)>;
+            key-positions = <13 14 15 16>;
+        };
+
+        paste {
+            bindings = <&kp LC(V)>;
+            key-positions = <1 2 3 4>;
+        };
     };
 
     keymap {
@@ -56,10 +66,10 @@
 
         default_layer_0 {
             bindings = <
-  &kp ESC  &kp Q  &kp W      &kp E  &kp R                     &kp T        &kp Y  &kp U          &kp I    &kp O             &kp P         &kp BSPC
-  &kp TAB  &kp A  &kp S      &kp D  &kp F                     &kp G        &kp H  &kp J          &kp K    &kp L  &kp SINGLE_QUOTE        &lt 3 RET
-&kp LSHFT  &kp Z  &kp X      &kp C  &kp V                     &kp B        &kp N  &kp M      &kp COMMA  &kp DOT         &kp SLASH  &kp RIGHT_SHIFT
-                         &kp LCTRL  &mo 1  &mt LEFT_SHIFT BACKSPACE    &kp SPACE  &mo 2  &kp RIGHT_ALT
+    &kp ESC  &kp Q  &kp W      &kp E  &kp R                     &kp T        &kp Y  &kp U          &kp I    &kp O             &kp P    &kp BSPC
+    &kp TAB  &kp A  &kp S      &kp D  &kp F                     &kp G        &kp H  &kp J          &kp K    &kp L  &kp SINGLE_QUOTE   &lt 3 RET
+&kp LA(TAB)  &kp Z  &kp X      &kp C  &kp V                     &kp B        &kp N  &kp M      &kp COMMA  &kp DOT         &kp SLASH  &kp K_MENU
+                           &kp LCTRL  &mo 1  &mt LEFT_SHIFT BACKSPACE    &kp SPACE  &mo 2  &kp RIGHT_ALT
             >;
         };
 
@@ -74,10 +84,10 @@
 
         Layer__2 {
             bindings = <
-&bootloader     &trans            &trans             &trans         &trans  &trans      &trans         &kp AMPS  &kp ASTERISK   &kp LPAR  &trans  &trans
-     &trans  &kp GRAVE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans      &trans         &kp DLLR   &kp PERCENT  &kp CARET  &trans  &trans
-     &trans     &trans            &trans             &trans         &trans  &trans    &kp RPAR  &kp EXCLAMATION   &kp AT_SIGN  &kp POUND  &trans  &trans
-                                                     &trans         &trans  &trans      &trans           &trans        &trans
+&trans  &kp EQUAL            &trans             &trans         &trans  &trans      &trans         &kp AMPS  &kp ASTERISK   &kp LPAR  &trans  &trans
+&trans  &kp GRAVE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans      &trans         &kp DLLR   &kp PERCENT  &kp CARET  &trans  &trans
+&trans     &trans            &trans             &trans         &trans  &trans    &kp RPAR  &kp EXCLAMATION   &kp AT_SIGN  &kp POUND  &trans  &trans
+                                           &bootloader         &trans  &trans      &trans           &trans        &trans
             >;
         };
 
