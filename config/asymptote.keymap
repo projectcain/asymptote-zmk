@@ -23,41 +23,49 @@
         enter {
             bindings = <&kp ENTER>;
             key-positions = <21 20 19>;
+            timeout-ms = <30>;
         };
 
         Tab {
             bindings = <&kp TAB>;
             key-positions = <14 15 16>;
+            timeout-ms = <30>;
         };
 
         WIN {
             bindings = <&kp LEFT_GUI>;
             key-positions = <16 19>;
+            timeout-ms = <30>;
         };
 
         Dash {
             bindings = <&kp MINUS>;
             key-positions = <19 20>;
+            timeout-ms = <30>;
         };
 
         Question {
             bindings = <&kp QUESTION>;
             key-positions = <20 21>;
+            timeout-ms = <30>;
         };
 
         Semi {
             bindings = <&kp SEMICOLON>;
             key-positions = <21 22>;
+            timeout-ms = <30>;
         };
 
         copy {
             bindings = <&kp LC(C)>;
             key-positions = <13 14 15 16>;
+            timeout-ms = <30>;
         };
 
         paste {
             bindings = <&kp LC(V)>;
             key-positions = <1 2 3 4>;
+            timeout-ms = <30>;
         };
     };
 
